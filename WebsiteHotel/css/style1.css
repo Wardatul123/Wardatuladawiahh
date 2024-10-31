@@ -1,0 +1,195 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAF3E0;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 50px; /* Padding lebih kecil */
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    max-height: 60px; /* Sesuaikan tinggi maksimum logo */
+    height: auto;
+    width: auto; /* Agar logo tetap proporsional */
+}
+
+
+
+.nav-links {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #e1be49;
+}
+
+/* Search and Book Now styling */
+.search-book {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-icon {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.book-now {
+    text-decoration: none;
+    background-color: #e1be49;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.book-now:hover {
+    background-color: #dac88c;
+}
+
+/* Hero Section Styling */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../resource/hotel.png');
+    background-size: cover;
+    background-position: center;
+    padding: 210px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #e1be49;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.discover-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #e1be49;
+    color: #e1be49;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.discover-btn:hover {
+    background-color: #e1be49;
+    color: #ffffff;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 14px;
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+    
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .hero-content p {
+        font-size: 12px;
+    }
+    
+    .discover-btn {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+    
+    .nav-links {
+        font-size: 12px;
+        gap: 8px;
+    }
+    
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    
+    .hero-content p {
+        font-size: 10px;
+    }
+    
+    .discover-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

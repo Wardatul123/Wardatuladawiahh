@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Reservasi</title>
+    <link rel="icon" type="icon" href="resource/image__20_-removebg-preview.png">
+    <link rel="stylesheet" href="css/style.css"> <!-- Ganti dengan jalur ke file CSS Anda -->
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="resource/image__20_-removebg-preview.png" alt="Logo" class="logo"> <!-- Ganti dengan jalur logo Anda -->
+            <div class="header-content">
+                <h1>Formulir Reservasi Elegant Hotel</h1>
+                <p>Isi data reservasi Anda di bawah ini</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="kontainer-dashboard">
+        <!-- Sidebar menu -->
+        <aside class="sidebar">
+            <ul class="menu">
+                <li><a href="Dashboard.html">Home</a></li>
+                <li><a href="tabel.html">Data Reservasi</a></li>
+                <li><a href="kamar.html">Kamar</a></li>
+                <li><a href="Login.html">Keluar</a></li>
+            </ul>
+        </aside>
+
+        <!-- Konten utama untuk formulir reservasi -->
+        <section class="konten-utama">
+            <div class="formulir-reservasi">
+                <h2>Isi Data Reservasi Anda</h2>
+                <form action="submit_reservasi.html" method="post">
+                    <label for="nama">Nama Pelanggan:</label>
+                    <input type="text" id="nama" name="nama" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telepon">Nomor Telepon:</label>
+                    <input type="tel" id="telepon" name="telepon" required>
+
+                    <label for="jenis-kamar">Jenis Kamar:</label>
+                    <select id="jenis-kamar" name="jenis-kamar" required>
+                        <option value="single">VIP Room</option>
+                        <option value="double">Standar Room</option>
+                        <option value="suite">Suite</option>
+                    </select>
+
+                    <label for="checkin">Tanggal Check-in:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+
+                    <label for="checkout">Tanggal Check-out:</label>
+                    <input type="date" id="checkout" name="checkout" required>
+
+                    <label for="catatan">Catatan Tambahan:</label>
+                    <textarea id="catatan" name="catatan" rows="4" placeholder="Tulis catatan tambahan Anda di sini..."></textarea>
+
+                    <input type="submit" value="Kirim Reservasi">
+                    <input type="submit1" value="Batal">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Elegant Hotel</p>
+    </footer>
+</body>
+</html>
